@@ -1,0 +1,133 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, ol, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: space-between;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+span {
+    font-style: italic;
+}
+
+/* Styles for Mobile Screens (up to 576px) */
+@media (max-width: 576px) {
+    main {
+        width: 95%; /* Adjust the width for mobile screens */
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    #section {
+        padding: 10px;
+    }
+
+    #aside {
+        padding: 10px;
+    }
+}
+
+/* Styles for Tablet Screens (between 577px and 992px) */
+@media (min-width: 577px) and (max-width: 992px) {
+    main {
+        width: 80%; /* Adjust the width for tablet screens */
+    }
+
+    header {
+        padding: 20px;
+    }
+
+    #section {
+        padding: 20px;
+    }
+
+    #aside {
+        padding: 20px;
+    }
+}
+
+/* Styles for Desktop Screens (above 992px) */
+@media (min-width: 993px) {
+    main {
+        width: 70%; /* Adjust the width for desktop screens */
+    }
+
+    header {
+        padding: 20px;
+    }
+
+    #section {
+        padding: 20px;
+    }
+
+    #aside {
+        padding: 20px;
+    }
+}
+
+#section {
+    flex: 2;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#myimg {
+    width: 20%;
+    /* height: auto; */
+}
+
+p {
+    margin-top: 20px;
+}
+
+ul, ol {
+    margin-top: 20px;
+}
+
+#aside {
+    flex: 1;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+ul, ol {
+    margin-left: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+}
